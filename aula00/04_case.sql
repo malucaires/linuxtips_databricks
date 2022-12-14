@@ -36,7 +36,3 @@ SELECT *,
          END AS descRegiao
          
 FROM silver_olist.vendedor
-
--- COMMAND ----------
-
-
