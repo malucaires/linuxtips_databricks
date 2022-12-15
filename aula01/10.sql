@@ -4,5 +4,6 @@
 SELECT *
 FROM silver_olist.pedido
 
-WHERE dtPedido LIKE '2017-12%'
+WHERE YEAR(dtPedido) = 2017
+AND MONTH(dtPedido) = 12
 AND DATE(dtEstimativaEntrega) < DATE(dtEntregue)

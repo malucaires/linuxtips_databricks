@@ -6,11 +6,13 @@
 -- * para frete maior que 50%: '+50%'
 
 SELECT *,
+      vlPreco + vlFrete AS vlTotal,
+      ROUND((vlFrete * 100) / (vlPreco + vlFrete),2) AS pctFrete,
 
       CASE 
-        WHEN vlFrete < (0.1 * vlPreco) THEN '10%'
-        WHEN vlFrete >= (0.1 * vlPreco) AND vlFrete < (0.25 * vlPreco) THEN '10% a 25%'
-        WHEN vlFrete >= (0.25 * vlPreco) AND vlFrete < (0.5 * vlPreco) THEN '25% a 50%'
+        WHEN vlFrete / (vlPreco + vlFrete) <= 0.1 THEN '10%'
+        WHEN vlFrete / (vlPreco + vlFrete) <= 0.25 THEN '10% a 25%'
+        WHEN vlFrete / (vlPreco + vlFrete) <= 0.5 THEN '25% a 50%'
         ELSE '+50%'
       END AS gruposFrete
          
