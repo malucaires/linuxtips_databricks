@@ -12,7 +12,7 @@
 
 07 - Lista de pedidos que ainda não foram enviados
 
-08 - Lista de pedidos que foram entregues com atrado
+08 - Lista de pedidos que foram entregues com atraso
 
 09 - Lista de pedidos que foram entregues com 2 dias de antecedência
 
