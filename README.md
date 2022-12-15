@@ -1,4 +1,4 @@
-# linuxtips_databricks
+# linuxtips_databricks_sql
 
 - [Aula 00] Consultas SELECT, FROM, WHERE e CASE
 
