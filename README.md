@@ -4,4 +4,4 @@
 
 - [Aula 01] Exercícios
 
-- [Aula 02] Agregadores COUNT, AVG, MAX, MIN, GROUP BY
+- [Aula 02] Agregadores COUNT, AVG, MAX, MIN, GROUP BY, ORDER BY, HAVING
