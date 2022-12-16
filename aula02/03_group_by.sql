@@ -5,7 +5,3 @@ SELECT
     COUNT(distinct idClienteUnico) AS qtdeClienteUnico
 FROM silver_olist.cliente
 GROUP BY descUF
-
--- COMMAND ----------
-
-
